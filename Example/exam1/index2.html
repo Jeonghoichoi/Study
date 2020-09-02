@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>약수구하기 예제파일</title>
+</head>
+<body>
+    <p>원하는 숫자를 입력해주세요.</p>
+    <input name="first" type="text" id="first">-
+    <input name="second" type="text" id="second">
+    <button onclick="main();">출력</button>
+</body>
+</html>
+<script>
+const number = document.getElementById("first").value
+console.log(number);
+
+function main(number) {
+  for(var i = 2; i < number; i++) {
+    if(number % i == 0) {
+      console.log(number);
+    }
+  }
+}
+main(1555)
+
+</script>
+<style>
+
+
+</style>

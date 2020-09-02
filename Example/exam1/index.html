@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>예제파일</title>
+</head>
+<body>
+    <p>원하는 단수를 입력해주세요.</p>
+    <input name="first" type="text" id="first">-
+    <input name="second" type="text" id="second">
+    <button onclick="one()">출력</button>
+    
+    <table class="gugutable" style="width : 300px"> 
+    <tr>
+      <th>2단</th>
+      <th>3단</th>
+      <th>4단</th>
+      <th>5단</th>
+      <th>6단</th>
+      <th>7단</th>
+      <th>8단</th>
+      <th>9단</th>
+    </tr>        
+    </table>
+</body>
+</html>
+<script> 
+  var first = document.getElementById("first").value
+  var second = document.getElementById("second").value
+  console.log(first)
+  console.log(second);
+
+  for(var i =2; i < 10; i++){ 
+  document.write();
+  }
+  function one() {
+  for(var i = 2; i < 10; i ++) {
+    document.write("<tr>")
+    for (var j = 1; j < 10; j++) {
+      document.write("<td>" + i + "x" + j + "=" + i*j + "<br><td>")
+    }
+  }
+}
+one()
+
+
+</script>
+<style>
+
+</style>
